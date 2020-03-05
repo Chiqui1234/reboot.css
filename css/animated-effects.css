@@ -1,0 +1,38 @@
+@keyframes pulse-green {
+    0% {color: var(--green);}
+    50% {color: transparent;}
+    100% {color: var(--green);}
+}
+@keyframes pulse-red {
+    0% {color: var(--red);}
+    50% {color: transparent;}
+    100% {color: var(--red);}
+}
+@keyframes pulse-orange {
+    0% {color: var(--orange);}
+    50% {color: transparent;}
+    100% {color: var(--orange);}
+}
+@keyframes sideways-translate {
+    0% {transform: translate(5px, 0);}
+    50% {transform: translate(0, 0);}
+    100% {transform: translate(5px, 0);}
+}
+@keyframes heart-beat {
+    0% {
+        text-shadow: -2px 0 5px var(--green),
+                     2px 0 5px var(--violet);
+    }
+    25% {
+        text-shadow: 0 0 15px var(--green),
+                     0 2px 15px var(--violet);
+    }
+    75% {
+        text-shadow: 2px 0 15px var(--green),
+                     -2px -2px 15px var(--violet);
+    }
+    100% {
+        text-shadow: -2px 0 5px var(--green),
+                     2px 0 5px var(--violet);
+    }
+}

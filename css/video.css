@@ -1,0 +1,5 @@
+.video {
+    width: 100%;
+    height: 374px; /* same as #cards li */
+    margin: var(--super-gap) 0 var(--super-gap) 0;
+}

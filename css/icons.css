@@ -1,0 +1,172 @@
+#demo-wrapper {
+    font-size: 32px;
+    animation: demo-wrapper 10s linear infinite;
+}
+#demo-wrapper a {
+    cursor: pointer;
+}
+@keyframes demo-wrapper {
+    0% {
+        background: var(--white);
+        border: 2px solid var(--green);
+    }
+    33% {
+        background: var(--grey);
+        border: 2px solid var(--blue);
+    }
+    66% {
+        background: var(--black);
+        border: 2px solid var(--red);
+    }
+    100% {
+        background: var(--white);
+        border: 2px solid var(--green);
+    }
+}
+i {font-style: normal;}
+i.black {color: var(--black);}
+i.grey {color: var(--grey);}
+i.white {color: var(--white);}
+i.red {color: var(--red);}
+i.green {color: var(--green);}
+i.blue {color: var(--blue);}
+i.orange {color: var(--orange);}
+i.yellow {color: var(--yellow);}
+i.cyan {color: var(--cyan);}
+i.skyblue {color: var(--skyblue);}
+i.violet {color: var(--violet);}
+/****   WEATHER ****/
+i.sun:before {
+    content: '\263C';
+}
+i.moon:before {
+    content: '\263E';
+}
+i.moon-alt:before {
+    content: '\263D';
+}
+/****   HEART   ****/
+i.heart:before {
+    content: "\2764";
+}
+/****   MUSIC   ****/
+i.music:before {
+    content: '\266B';
+}
+/****   TELEPHONE   ****/
+i.telephone:before {
+    content: '\260E';
+}
+i.telephone-alt:before {
+    content: '\260F';
+}
+/****   ARROWS  ****/
+i.left-arrow:before {
+    content: '\25c0';
+}
+i.right-arrow:before {
+    content: '\25ba';
+}
+/**** FLAGS ****/
+.flag:before {
+    content: '\2691';
+}
+.flag-alt:before {
+    content: '\2690';
+}
+/****   ACTIONS ****/
+i.menu:before {
+    content: '\2630';
+}
+i.menu-alt:before {
+    content: '\2632';
+}
+i.uncheck:before {
+    content: '\2610';
+}
+i.check:before {
+    content: '\2611';
+}
+i.check-alt:before {
+    content: '\2713';
+}
+i.check-error:before {
+    content: '\2612';
+}
+i.check-error-alt:before {
+    content: '\2715';
+}
+.recycle:before {
+    content: '\267B';
+}
+.recycle-alt:before {
+    content: '\267A';
+}
+.warning:before {
+    content: '\26A0';
+}
+.cut:before {
+    content: '\2702';
+}
+/****   DOTS    ****/
+i.dot:before {
+    content: '\2022';
+}
+    i.dot-green:before {
+        content: '\2022';
+        color: var(--green);
+    }
+    i.dot-orange:before {
+        content: '\2022';
+        color: var(--orange);
+    }
+
+/****   MONEY   ****/
+i.cent:before {
+    content: '\00a2';
+}
+/****   MATH & CIENCE   ****/
+i.cu:before { /*cada una*/
+    content: '\2106';
+}
+i.celcius:before {
+    content: '\2103';
+}
+i.fahrenheit:before {
+    content: '\2109';
+}
+i.radioactive:before {
+    content: '\2622';
+}
+i.atom:before {
+    content: '\269B';
+}
+/****   HENRE   ****/
+i.male:before {
+    content: '\2642';
+}
+i.female:before {
+    content: '\2640';
+}
+/****   AIRPORT ****/
+i.airplane:before {
+    content: '\2708';
+}
+/****   TEXT ANIMATIONS
+    *   animate your text   *
+    ****/
+i.heart-beat-green:before, div.heart-beat-green:before {
+    animation: heart-beat var(--transitionTime) ease-in-out infinite;
+}
+i.pulse-green:before, div.pulse-green:before {
+    animation: pulse-green 1s ease-in-out infinite;
+}
+i.pulse-red:before, div.pulse-red:before {
+    animation: pulse-green 1.5s ease-in-out infinite;
+}
+i.pulse-orange:before, div.pulse-orange:before {
+    animation: pulse-orange 1.5s ease-in-out infinite;
+}
+i.sideways-translate:before, div.sideways-translate:before {
+    animation: sideways-translate 1s ease-in-out infinite;
+}

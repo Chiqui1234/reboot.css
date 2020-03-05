@@ -1,0 +1,118 @@
+#card { /* if you need only one card */
+    width: 266px;
+    height: 374px;
+}
+#cards {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 266px;
+    grid-template-rows: 374px;
+    display: grid;
+}
+#cards.grid-2 {
+    grid-template-columns: 266px 266px;
+    grid-auto-rows: 374px;
+}
+#cards li, #cards div, #card {
+    position: relative;
+    box-shadow: 0 0 10px transparent;
+    transition: box-shadow var(--transitionTime) ease-in-out;
+    cursor: default;
+}
+#cards li:hover, #cards div:hover, #card:hover {
+    box-shadow: 0 0 10px var(--black-transparent);
+}
+#cards .onhover .description, #card.onhover .description {
+    width: 100%;
+    height: 100%;
+    padding: var(--super-gap) var(--super-gap) 30px var(--super-gap);
+    background: var(--white);
+    opacity: 0;
+    white-space: wrap;
+    overflow-y: auto;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    transition: opacity var(--transitionTime) ease-in-out;
+}
+    #cards .onhover a, #card.onhover a {
+        color: var(--white);
+    }
+/* card's colors */
+#cards .onhover.orange .description, #card.onhover.orange .description {
+    background: var(--orange);
+}
+    #cards .onhover.orange a, #card.onhover.orange a {
+        color: var(--orange);
+    }
+#cards .onhover.green .description, #card.onhover.green .description {
+    background: var(--green);
+}
+    #cards .onhover.green a, #card.onhover.green a {  
+        color: var(--green);
+    }
+#cards .onhover.red .description, #card.onhover.red .description {
+    background: var(--red);
+    color: var(--white);
+}
+    #cards .onhover.red a, #card.onhover.red a {
+        color: var(--red);
+    }
+#cards .onhover.grey .description, #card.onhover.grey .description {
+    background: var(--grey);
+    color: var(--white);
+}
+    #cards .onhover.grey a, #card.onhover.grey a {
+        color: var(--white);
+    }
+#cards .onhover.yellow .description, #card.onhover.yellow .description {
+    background: var(--yellow);
+}
+    #cards .onhover.yellow a, #card.onhover.yellow a {
+        color: var(--yellow);
+    }
+/****/
+#cards .onhover:hover .description, #card.onhover:hover .description {
+    opacity: .9;
+}
+#cards .read-more, #card .read-more {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: var(--black);
+    color: var(--white);
+    position: absolute;
+    bottom: 0;
+}
+#cards .read-more a, #card .read-more a {
+    color: var(--green);
+}
+#cards .read-more a:hover, #card .read-more a:hover {
+    color: var(--yellow);
+}
+
+@media (max-width: 1279px) {
+    #cards.grid-2 {
+        grid-template-columns: repeat(3, 266px);
+        justify-content: center;
+    }
+}
+@media (max-width: 1023px) {
+    #cards.grid-2 {
+        grid-template-columns: 266px;
+        justify-content: center;
+    }
+}
+@media (min-width: 1799px) {
+    #cards.grid-2 {
+        grid-template-columns: repeat(3, 266px);
+        grid-auto-rows: 374px;
+    }
+}
+@media (min-width: 2159px) {
+    #cards.grid-2 {
+        grid-template-columns: repeat(4, 266px);
+        grid-auto-rows: 374px;
+    }
+}

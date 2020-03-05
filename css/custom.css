@@ -1,0 +1,68 @@
+/****   CUSTOM.CSS
+    *   You can add your own CSS here!   *
+    ****/
+/* home */
+#ninjaming-background {
+    width: 150vw;
+    height: 33vh;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 15vh;
+    left: -25vw;
+    z-index: -1;
+}
+#ninjaming-background #logo {
+    width: 256px;
+    height: 307px;
+    position: absolute;
+    background: url('../demo/img/ninjaming.png') center no-repeat;
+    animation: ninjaming-logo 20s linear infinite;
+}
+    #ninjaming-background #logo::before {
+        width: 256px;
+        height: 307px;
+        position: absolute;
+        left: -296px;
+        top: 0;
+        content: '';
+        background: url('../demo/img/ninjaming.png') 0 0 no-repeat;
+    }
+    #ninjaming-background #logo::after {
+        width: 256px;
+        height: 307px;
+        position: absolute;
+        left: 296px;
+        top: 0;
+        content: '';
+        background: url('../demo/img/ninjaming.png') 0 0 no-repeat;
+    }
+#ninjaming-background #text {
+    width: 768px;
+    margin-top: 347px;
+    content: "Ninjaming support us!";
+    animation: ninjaming-text 18s linear infinite;
+}
+    #ninjaming-background #text::before {
+        content: "Ninjaming support us!";
+        margin-right: 100px;
+    }
+    #ninjaming-background #text::after {
+        content: "Ninjaming support us!";
+        margin-left: 100px;
+    }
+@keyframes ninjaming-logo {
+    from {
+        left: -256px;
+    }
+    to {
+        left: 100%;
+    }
+}
+@keyframes ninjaming-text {
+    from {
+        margin-left: -236px;
+    }
+    to {
+        margin-left: 100%;
+    }
+}

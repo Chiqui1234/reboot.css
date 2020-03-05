@@ -1,0 +1,70 @@
+.box-black {
+    background: var(--black-transparent);
+    padding: var(--super-gap);
+}
+.box-black a {color: var(--green);}
+.box-black a:hover {color: var(--yellow);}
+/****/
+.box-red {
+    background: var(--red-transparent);
+    padding: var(--super-gap);
+}
+.box-red p {color: var(--white);}
+.box-red a {color: var(--black);}
+.box-red a:hover {color: var(--white);}
+/****/
+.box-orange {
+    background: var(--orange-transparent);
+    padding: var(--super-gap);
+}
+.box-orange a {color: var(--white);}
+.box-orange a:hover {color: var(--black);}
+/****/
+.box-green {
+    background: var(--green-transparent);
+    padding: var(--super-gap);
+}
+.box-green a {color: var(--grey);}
+.box-green a:hover {color: var(--black);}
+/****/
+.box-skyblue {
+    background: var(--skyblue-transparent);
+    padding: var(--super-gap);
+}
+.box-skyblue a {color: var(--green);}
+.box-skyblue a:hover {color: var(--black);}
+/****/
+.box-blue {
+    background: var(--blue-transparent);
+    padding: var(--super-gap);
+}
+.box-blue p {color: var(--white);}
+.box-blue a {color: var(--grey);}
+.box-blue a:hover {color: var(--white);}
+/****/
+.box-violet {
+    background: var(--violet-transparent);
+    padding: var(--super-gap);
+}
+.box-violet p {color: var(--white);}
+.box-violet a {color: var(--grey);}
+.box-violet a:hover {color: var(--white);}
+/****/
+.rounded {
+    border-radius: var(--gap);
+}
+/* spoiler */
+.spoiler .title {
+    font-family: 'Julius-Sans-One';
+    font-size: 20px;
+    z-index: 2;
+}
+.spoiler .wrapper {
+    height: 0;
+    opacity: 0;
+    transition: all var(--transitionTime) ease-in-out;
+}
+.spoiler:hover .wrapper {
+    height: auto;
+    opacity: 1;
+}

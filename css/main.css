@@ -1,0 +1,97 @@
+/****   REBOOT.CSS
+    *   When the magic starts :O   *
+    ****/
+/****/
+* {
+    box-sizing: border-box; /* The actual size of an element aren't affected by internal padding */
+    z-index: inherit;
+}
+body {
+    font-family: Roboto;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+:root { /* Variables for colors, margins and more */
+    /* Colors */
+    --black: rgb(29, 29, 29);
+        --black-transparent: rgba(29, 29, 29, 0.8);
+    --grey: rgb(70, 70, 70);
+    --white: rgb(235, 235, 235);
+        --white-transparent: rgba(235, 235, 235, 0.8);
+    --red: rgb(241, 21, 32);
+        --red-transparent: rgba(241, 21, 32, 0.8);
+    --green: rgb(36, 190, 57);
+        --green-transparent: rgba(36, 190, 57, 0.8);
+    --blue: rgb(37, 40, 211);
+        --blue-transparent: rgba(37, 40, 211, 0.8);
+    --orange: rgb(221, 56, 27);
+        --orange-transparent: rgba(221, 56, 27, 0.8);
+    --yellow: rgb(206, 226, 25);
+    --cyan: rgb(27, 208, 221);
+    --skyblue: rgb(30, 95, 218);
+        --skyblue-transparent: rgba(30, 95, 218, 0.8);
+    --violet: rgb(88, 27, 230);
+        --violet-transparent: rgba(88, 27, 230, 0.8);
+    /* Gaps */
+    --gap: 10px;
+    --super-gap: 20px;
+    --p-gap: 30px;
+    /* Transitions */
+    --transitionTime: .5s;
+    /* Sizes */
+    --readWidth1: 80%;
+    /****   CUSTOM VARIABLES
+    *   You can put your variables below this comment   *
+    ****/
+}
+/****   Sizes
+    *   'full-screen', 'full-height', 'full-width' classes can be found here   *
+    ****/
+.full-width {
+    width: 100%;
+}
+.full-height {
+    height: 100vh;
+}
+.full-screen {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+    .full-screen .center {
+        align-content: center;
+    }
+/****   MARGIN
+    *   'margin' classes can be found here   *
+    ****/
+.margin {
+    margin: var(--super-gap);
+}
+.margin-left {
+    margin-left: var(--gap);
+}
+.margin-top {
+    margin-top: var(--gap);
+}
+.margin-right {
+    margin-right: var(--gap);
+}
+.margin-bottom {
+    margin-bottom: var(--gap);
+}
+/****   PADDING
+    *   'padding' classes can be found here   *
+    ****/
+.padding {
+    padding: var(--super-gap);
+}
+/****   CONTAINERS & CENTERS
+    *   'margin' classes can be found here   *
+    ****/
+.container {
+    width: var(--readWidth1);
+}
+.center {
+    margin: 0 auto;
+}

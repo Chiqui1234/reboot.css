@@ -1,0 +1,88 @@
+/****   TEXT
+    *   If you wanna get my favorite fonts which are embebed in reboot.css, you can start here :)   *
+    ****/
+@font-face { /* For <p> and <a> tags */
+    font-family: Roboto;
+    src: url('../font/Roboto/Roboto-Medium.ttf');
+}
+@font-face { /* For <strong> and <b> tags */
+    font-family: Roboto-Bold;
+    src: url('../font/Roboto/Roboto-Bold.ttf');
+}
+@font-face { /* For <h1> and <h2> tags */
+    font-family: Julius-Sans-One;
+    src: url('../font/Julius-Sans-One/JuliusSansOne-Regular.ttf');
+}
+@font-face { /* For <h3> and below */
+    font-family: Open-Sans-Bold;
+    src: url('../font/Open-Sans/OpenSans-Bold.ttf');
+}
+/****   TEXT CONFIGURATION
+    *   Basic configuration for common text tags   *
+    ****/
+h1, h2, h3, h4, h5, h6 {color: var(--black);}
+h1, h2 {
+    font-family: Julius-Sans-One, 'Segoe UI', Tahoma, sans-serif, Arial;
+}
+h3, h4, h5, h6 {
+    font-family: Open-Sans-Bold, sans-serif, Arial;
+}
+p, ul li {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    line-height: var(--p-gap);
+    margin: var(--gap) 0 var(--gap) 0;
+}
+strong, b {
+    font-family: Roboto-Bold, sans-serif;
+}
+/****   TEXT ALIGNMENT
+    *   align your text to anywhere   *
+    ****/
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+/****   LINKS CONFIGURATION
+    *   Basic configuration for links   *
+    ****/
+a {
+    color: var(--skyblue);
+    text-decoration: none;
+    transition: color var(--transitionTime) ease-in-out;
+}
+a:hover {
+    color: var(--green);
+}
+/****   TEXT COLORS
+    *   Here are classes for different text colors   *
+    ****/
+.text-white {color: var(--white);}
+.text-black {color: var(--black);}
+.text-red {color: var(--red);}
+.text-green {color: var(--green);}
+/****   LISTS CONFIGS
+    *   Some tweaking to lists   *
+    ****/
+ul {
+    padding: 0 0 0 var(--super-gap);
+    margin: 0;
+}
+ul.minimal {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/****   TEXT ANIMATIONS
+    *   animate your text   *
+    ****/
+/****/
+/****/
+@media (max-width: 1279px) {
+    h1, h2, h3, h4, h5, h6 {text-align: center;}
+}

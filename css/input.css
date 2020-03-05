@@ -1,0 +1,43 @@
+/****   INPUT
+    *   input:text, textarea, buttons and more   *
+    ****/
+
+/****   BUTTONS
+    *   xxx   *
+    ****/
+textarea {
+    min-height: 150px;
+}
+input, button, textarea {
+    transition: all var(--transitionTime) ease-in-out;
+    padding: var(--super-gap);
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input[type=submit].white, button.white, input[type=submit].black, button.black {
+    text-align: center;
+    cursor: pointer;
+}
+input.white, button.white, textarea.white {
+    background: var(--white);
+    border: 1px solid var(--skyblue);
+}
+input.white:hover, button.white:hover, textarea.white:hover {
+    border: 1px solid var(--green);
+}
+input.black, button.black, textarea.black {
+    background: var(--black);
+    border: 1px solid var(--blue);
+}
+input.black:hover, button.black:hover, textarea.black:hover {
+    border: 1px solid var(--violet);
+}
+/****   INVALID
+    *   'invalid' states are identical between input/button/textareas elements   *
+    ****/
+input[type=submit]:required:invalid, button:required:invalid {
+    background: var(--red);
+    border: 1px solid var(--orange);
+    color: var(--white);
+    cursor: not-allowed;
+}

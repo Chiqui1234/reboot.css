@@ -1,0 +1,18 @@
+/****   TOOLTIPS
+    *   You can get any HTML parameter with CSS <3 Look below!   *
+    ****/
+
+.tooltip[data-title]:hover:before {
+    content: attr(data-title);
+    position: absolute;
+    margin-top: -2.5%;
+    color: var(--black);
+    background: rgba(235, 235, 235, 0.9); /* --white-transparent with less opacity */
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    padding: var(--gap);
+    border-radius: 0 var(--gap) 0 0;
+    box-shadow: 0 0 10px var(--black-transparent);
+    z-index: 99;
+}

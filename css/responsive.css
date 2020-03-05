@@ -1,0 +1,9 @@
+/****   RESPONSIVE
+    *   Specific classes for better mobile management   *
+    ****/
+.remove-mobile {display: inline;}
+@media (max-width: 1279px) {
+    .remove-mobile {
+        display: none;
+    }
+}
